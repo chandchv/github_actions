@@ -31,14 +31,14 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run:
-          echo what's in this directory ?
+        run: |
+          echo what's in this directory
           ls -a
-          echo Is Java installed?
+          echo Is Java installed
           java -version
-          echo Is Git installed ?
+          echo Is Git installed
           git --version
-          echo what build tools?
+          echo what build tools
           mvn --version
           gradle  --version
           ant  -version
